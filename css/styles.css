@@ -1,42 +1,446 @@
-body{background:#008080;}
-.bg1{background:url(../images/pic.jpg)}
-.display-2{font-family:'Courier Prime',monospace;font-size:3em}
-.dotted{border-width:6px;border-style:dashed}
-.info{font-family:'Courier Prime',monospace;font-size:1em;justify-content:center}
-h1{font-size:22px;}
-.albums{background-color:#659dbd}
-.btn{text-align:center;letter-spacing:2px;font-family:'Courier Prime',monospace;font-size:1.5em;background:#8d8741;color:#fff}
-.btn:hover{color:#e27d60}
-.btn-lg:active{color:#fbeec1}
-.btn-lg:focus{color:#daadd6}
-.col-lg-3 ul{font-family:'Courier Prime',monospace;font-size:1.5em;text-align:center;font-weight:bolder;color:#fff}
-.list-group-item{background-image:linear-gradient(to right,#f29492,#d39d38)}
-.list-group-item:hover{color:#8ee4af;transform:scale(1.1)}
-.list-group-item{transition:all .2s ease-in-out}
-.dropdown-toggle-split{margin-right:2px}
-p{font-family:'Courier Prime',monospace;font-size:12px;font-weight:700}
-.pad50{padding-top:50px}
-.button{display:inline-block;height:40px;line-height:40px;padding-right:20px;padding-left:60px;position:relative;background-color:#000;color:#fff;text-decoration:none;text-transform:none;letter-spacing:1px;margin-bottom:14px;text-shadow:1px 1px 0 rgba(0,0,0,.5)}
-.button:hover{text-decoration:none;color:#fff;text-shadow:none}
-.button p{font-size:12px}
-.button span{position:absolute;left:0;width:50px;font-size:30px;-webkit-border-top-left-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-bottomleft:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;border-right:1px solid rgba(0,0,0,.15);text-decoration:none}
-.button.twitter{background:#00acee}
-.button.facebook{background:#3b5998}
-.button.youtube{background:#c4302b}
-.button.apple{background:#cdcdcd}
-.button.instagram{background:#3f729b}
-.button.spotify{color:#008000;}
-.button.spotify p{color:#fff}
-.text-center{text-align:center}
-.bg{background:-moz-linear-gradient(top,#feccb1 0,#f17432 50%,#ea5507 51%,#fb955e 100%);background:-webkit-linear-gradient(top,#feccb1 0,#f17432 50%,#ea5507 51%,#fb955e 100%);background:linear-gradient(to bottom,#feccb1 0,#f17432 50%,#ea5507 51%,#fb955e 100%)}
-.btn-sm{font-size:12px}
-.news{font-size:22px;}
-.footer{display:grid;grid-template-columns:repeat(12,1fr)}
-.footer p{grid-column:13;justify-content:end}
-.comments{padding:100px}
-.col-form-label{font-size:1.5em;font-family:'Courier Prime',monospace;color:#fff}
-.form-heading{font-family:'Courier Prime',monospace;color:#fff}
-.form-check-label{color:#fff;}
-.sources{display:grid;grid-template-rows:repeat(4,1fr);font-family:'Courier Prime',monospace;font-size:20px;text-align:center;color:#fff}
-.sources a{color:#fff}
-a:hover{color:#8ee4af;transform:scale(1.1)}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    color: #000;
+    font-family:  Arial, sans-serif;
+}
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Nav */
+.bg-warning {
+    background: none;
+    background-color: #6DEB47!important;
+}
+
+.navbar {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    width: 70%;
+    margin: auto;
+    height: 40%;
+    padding: 0;
+}
+.navbar-nav .active{
+    font-weight: normal !important;
+}
+
+.nav-link {
+    font-weight: normal !important;
+    text-transform: uppercase;
+}
+
+.navbar-dark {
+    display: none;
+}
+
+/* End of Nav */
+
+/* Carousel */
+.carousel-caption {
+    visibility: hidden;
+}
+/* End of Carousel */
+
+/* About   */
+.d-flex
+.card, 
+.card-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 5px !important;
+}
+
+#about p {
+    color: #000;
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    padding-bottom: 15px;
+}
+
+/* End of About */
+
+/* Band */
+.mt-3{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#band, 
+#discography {
+    background-color: #6DEB47;
+    padding: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.bg-primary {
+    background: none !important;
+}
+
+.card, .card-body{
+    border: none;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.display-2 {
+    font-size: 30px;
+    padding: 0 !important;
+    font-weight: normal;
+    color: #000 !important;
+}
+
+.mb-4 {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+}
+
+section h1 {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.btn-success, .btn-danger {
+    background: none;
+    background: #6deb47 !important;
+    color: #000;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 8px;
+}
+.card-body img {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-danger {
+    background: none !important;
+}
+
+.border-success, .border-secondary {
+    border: none !important;
+}
+/* End of Band */
+
+/* Albums */
+.albums {
+    padding: 10px;
+}
+
+.col-lg-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-lg-3 .img-fluid {
+    width: 90%;
+    padding-bottom: 10px;
+}
+.albums a, 
+.albums a:hover
+.albums a:active{
+    background: #000000;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #6DEB47;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    border: 2px solid #000;
+    background-color: #6DEB47;
+}
+
+.border, .border-danger {
+    border: none !important;
+}
+
+br {
+    display: none;
+}
+/* End of Albums */
+
+/* Social Links */
+
+.jumbotron-fluid {
+    background-color: #6DEB47;
+    padding: 0 !important;
+    padding-top: 25px !important;
+    padding-bottom: 15px !important;
+
+}
+
+.jumbotron-fluid .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 !important;
+}
+
+.jumbotron-fluid a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.jumbotron-fluid i ,
+.jumbotron-fluid p{
+    color: #000;
+}
+/* Social Links */
+
+/* Newsletter  */
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-basis: 50%;
+    flex-flow: wrap-reverse;
+}
+
+.news {
+    padding: 0 !important;
+}
+.col .btn-lg {
+    line-height: 0 !important;
+}
+
+.col .btn {
+    visibility: visible;
+}
+
+.img-fluid {
+    display: block;
+}
+
+.img-fluid .mt-1 {
+    margin: 0 !important;
+}
+/* End of Newsletter */
+
+/* Footer  */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer .btn {
+    margin-right: 800px;
+}
+.footer .btn-sm,
+.footer a{
+    background-color: #6DEB47;
+    border: 2px solid #000;
+    margin-left: 100px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+    
+}
+.footer p a {
+    text-align: center;
+    margin-left: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* End of Footer */
+
+/* Style form.html */
+
+.mt-5 {
+    margin-top: 0 !important;
+}
+form, fieldset {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.form-heading {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.form-group .row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.form-group .row .mt-3 {
+    margin: 0 !important;
+}
+
+.col-md-4 .form-control {
+    margin-bottom: 20px;
+}
+
+
+#address {
+    margin: 10px 0;
+}
+
+#city {
+    margin-left: 15px;
+}
+
+#comments {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.form-check {
+    padding-top: 15px;
+}
+
+.offset-md-2 .btn {
+    color:#000 !important;
+    margin-top: 10px;
+    padding: .1em .5em !important;
+    background-color: #6DEB47 !important;
+    border: 2px solid #000;
+}
+/* End of Style form.html */
+
+@media only screen and (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    /* Navigation */
+    .navbar-brand img {
+        padding-left: 10px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+    /* End of Navigation */
+
+    /* About  */
+    #about p {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    .display-2 {
+        font-size: 25px;
+    }
+
+    .card-substitle {
+        font-size: 23px;
+    }
+    /* End of About */
+
+    /* Band & Discography */
+    #band, #discography {
+        text-align: center;
+    }
+    .card-body img {
+        width: 70%;
+    }
+    /* End of Band & Discography */
+    /* Albums */
+    .albums .img-fluid{
+        width: 100% !important;
+        height: auto;
+    }
+
+    /* End of Albums */
+
+    /* Social Links */
+    .jumbotron-fluid .text-center {
+        display: flex;
+        padding: 0 !important;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    /* End of Social Links */
+
+    /* Newsleter */
+
+    .col {
+        flex-direction: column;
+    }
+    .col h1 {
+        font-size: 30px;
+    }
+
+    .row  .img-fluid {
+        width: 25% !important; 
+        padding: 0 !important;
+    }
+    /* End of Newsletter  */
+
+    /* Footer  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .footer .btn {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .footer a {
+        margin-left: 0 !important;
+    }
+    /* Footer */
+}
+
